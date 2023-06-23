@@ -151,5 +151,61 @@ a:hover {
 
 .main {
   height: 100vh;
-  background-color: red;
+}
+
+.gradient {
+  width: 100%;
+  height: 8px;
+  background: rgb(108, 180, 58);
+  background: linear-gradient(
+    90deg,
+    rgba(108, 180, 58, 1) 0%,
+    rgba(228, 193, 12, 1) 49%,
+    rgba(65, 158, 10, 1) 100%
+  );
+}
+
+.skills {
+  background-color: #f1f5f8;
+  text-align: center;
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+
+.skill {
+  background-color: #f1f5f8;
+  padding: 36px 18px;
+  transition: all 500ms;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.skill:hover {
+  background-color: white;
+  box-shadow: 0 2px var(--color-primary);
+}
+
+.skill:hover .skill-icon {
+  transform: translateY(-10px);
+}
+
+.skill-icon {
+  transition: all 500ms;
+  color: var(--color-primary);
+  font-size: 56px;
+}
+
+.skill-title {
+  color: #678e3e;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 24px 0;
+}
+
+.skill-description {
+  font-family: "Markazi Text", serif;
+  font-family: ;
+  color: #617d98;
+  font-size: 24px;
 }
