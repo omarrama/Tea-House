@@ -330,8 +330,72 @@ section:nth-of-type(odd) {
   font-size: 20px;
 }
 
-/* FOOTER */
+/* MAIN > SERVICES */
 
-.footer {
-  height: 500px;
+.services {
+  /* min-height: 100vh; */
+}
+
+.services-header {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 60px;
+}
+
+.card {
+  background-color: #f1f5f8;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 20px;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 22px;
+  position: relative;
+  box-shadow: -2px 0px 31px -9px rgba(0,0,0,0.31);
+  -webkit-box-shadow: -2px 0px 31px -9px rgba(0,0,0,0.31);
+  -moz-box-shadow: -2px 0px 31px -9px rgba(0,0,0,0.31);
+  transition: transform 800ms;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card > figure {
+  position: relative;
+}
+
+.card-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  border: 5px solid #f1f5f8;
+}
+
+.card-title {
+  margin-top: 25px;
+  text-transform: capitalize;
+  font-size: 28px;
+}
+
+.card-para {
+  padding: 0 16px;
+  font-size: 20px;
 }
