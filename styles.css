@@ -26,7 +26,6 @@ body {
 a {
   font-family: "Markazi Text", serif;
   text-decoration: none;
-  text-transform: uppercase;
   color: white;
   background-color: var(--color-primary);
   padding: 10px 24px;
@@ -169,7 +168,7 @@ section:nth-of-type(odd) {
 .main-heading {
   max-width: 600px;
   margin-top: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 80px;
   color: white;
   font-size: 64px;
   line-height: 0.9;
@@ -361,7 +360,7 @@ section:nth-of-type(odd) {
   box-shadow: -2px 0px 31px -9px rgba(0,0,0,0.31);
   -webkit-box-shadow: -2px 0px 31px -9px rgba(0,0,0,0.31);
   -moz-box-shadow: -2px 0px 31px -9px rgba(0,0,0,0.31);
-  transition: transform 800ms;
+  transition: transform 400ms;
 }
 
 .card:hover {
@@ -398,4 +397,83 @@ section:nth-of-type(odd) {
 .card-para {
   padding: 0 16px;
   font-size: 20px;
+}
+
+/* MAIN > CONTACT */
+
+.contact > .green-heading {
+  text-align: center;
+  margin-top: -28px;
+  margin-bottom: 42px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  font: inherit;
+}
+
+.form > input,
+.form > textarea {
+  padding: 12px 10px;
+  border: 1px solid var(--color-primary) !important;
+  outline: none;
+  resize: none;
+  border: none;
+  font: inherit;
+}
+
+.form > *, .form > *::placeholder {
+  font-size: 19px !important;
+  border-radius: 5px;
+}
+
+.form > button {
+  font-family: "Markazi Text", serif;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  align-self: stretch;
+  color: white;
+  background-color: var(--color-primary);
+  padding: 10px 24px;
+  transition: all 500ms;
+  letter-spacing: 1px;
+}
+
+.form > button:hover {
+  background-color: var(--color-secondary);
+  color: #678e3e;
+  color: var(--color-primary);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 54px;
+  font-size: 26px;
+}
+
+.contact-icon {
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+.contact-info small {
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-right: 5px;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+/* FOOTER */
+
+.footer {
+  
 }
